@@ -166,12 +166,15 @@ public class Main {
     }
 
     private static void getName(Scanner in, ContactBook cBook) {
+        int phone;
+        phone = in.nextInt(); in.nextLine();
+        if (cBook.hasPhones(phone) == -1) {
+            System.out.println(DOES_NOT_EXIST);
+        }
 
-        System.out.println(DOES_NOT_EXIST);
     }
 
     private static void equalPhones(ContactBook cBook) {
-
         System.out.println(SHARE_NUMBER);
         System.out.println(DIFFERENT_NUMBER);
     }
