@@ -178,8 +178,8 @@ public class Main {
     private static void equalPhones(ContactBook cBook) {
         if(cBook.hasEqualPhones())
             System.out.println(SHARE_NUMBER);
-
-        System.out.println(DIFFERENT_NUMBER);
+        else
+            System.out.println(DIFFERENT_NUMBER);
     }
 
 }

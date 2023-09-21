@@ -1,6 +1,7 @@
 package contactBook;
 
 import contactBook.Contact;
+/* Madalena Pla'cido 63001 e Renata Henriques 63215 */
 
 public class ContactBook {
     static final int DEFAULT_SIZE = 100;
