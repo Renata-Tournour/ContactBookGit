@@ -170,12 +170,15 @@ public class Main {
         phone = in.nextInt(); in.nextLine();
         if (cBook.hasPhones(phone) == -1) {
             System.out.println(DOES_NOT_EXIST);
+        }else{
+            System.out.println(cBook.getName(phone));
         }
 
     }
-
     private static void equalPhones(ContactBook cBook) {
-        System.out.println(SHARE_NUMBER);
+        if(cBook.hasEqualPhones())
+            System.out.println(SHARE_NUMBER);
+
         System.out.println(DIFFERENT_NUMBER);
     }
 

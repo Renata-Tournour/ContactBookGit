@@ -21,11 +21,19 @@ public class ContactBook {
     }
 
     public int hasPhones(int phone) {
-        return hasEqualPhones(phone);
+        return searchIndexByPhone(phone);
     }
 
     public int getNumberOfContacts() {
         return counter;
+    }
+
+    public boolean hasEqualPhones(){
+        for(int i = 0; i< counter; i++){
+            if( numEqualPhones(contacts[i].getPhone()) >1)
+                return true;
+        }
+        return false;
     }
 
     //Pre: name!= null && !hasContact(name)
@@ -94,7 +102,7 @@ public class ContactBook {
         return result;
     }
 
-    private int hasEqualPhones(int phone) {
+    private int numEqualPhones(int phone) {
         int i = 0;
         int num = 0;
         while (i<counter) {
