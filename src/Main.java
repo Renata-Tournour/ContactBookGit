@@ -27,6 +27,12 @@ public class Main {
     public static final String CONTACT_REMOVED = "contactBook.Contact removed.";
     public static final String CONTACT_UPDATED = "contactBook.Contact updated.";
     public static final String BOOK_EMPTY = "contactBook.Contact book empty.";
+
+    public static final String DOES_NOT_EXIST = "Phone number does not exist.";
+
+    public static final String SHARE_NUMBER = "There are contacts that share phone numbers.";
+
+    public static final String DIFFERENT_NUMBER = "All contacts have different phone numbers.";
     public static final String QUIT_MSG = "Goodbye!";
     public static final String COMMAND_ERROR = "Unknown command.";
 
@@ -59,7 +65,7 @@ public class Main {
                     listAllContacts(cBook);
                     break;
                 case GET_NAME:
-                    getName(cBook);
+                    getName(in,cBook);
                     break;
                 case EQUAL_PHONES:
                     equalPhones(cBook);
@@ -159,12 +165,15 @@ public class Main {
         else System.out.println(BOOK_EMPTY);
     }
 
-    private static void getName(ContactBook cBook) {
+    private static void getName(Scanner in, ContactBook cBook) {
 
+        System.out.println(DOES_NOT_EXIST);
     }
 
     private static void equalPhones(ContactBook cBook) {
 
+        System.out.println(SHARE_NUMBER);
+        System.out.println(DIFFERENT_NUMBER);
     }
 
 }
