@@ -3,6 +3,7 @@ import contactBook.ContactBook;
 
 import java.util.Scanner;
 
+/* Madalena Pla'cido 63001 e Renata Henriques 63215 */
 
 public class Main {
     //Constantes que definem os comandos
