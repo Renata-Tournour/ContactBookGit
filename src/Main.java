@@ -58,6 +58,12 @@ public class Main {
                 case LIST_CONTACTS:
                     listAllContacts(cBook);
                     break;
+                case GET_NAME:
+                    getName(cBook);
+                    break;
+                case EQUAL_PHONES:
+                    equalPhones(cBook);
+                    break;
                 default:
                     System.out.println(COMMAND_ERROR);
             }
@@ -152,4 +158,13 @@ public class Main {
         }
         else System.out.println(BOOK_EMPTY);
     }
+
+    private static void getName(ContactBook cBook) {
+
+    }
+
+    private static void equalPhones(ContactBook cBook) {
+
+    }
+
 }
